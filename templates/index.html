@@ -6,14 +6,13 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>BASICA! A Free Bootstrap3 HTML5 CSS3 Template by Vactual Art</title>
+    <title>CUPUX! A Developer</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
@@ -21,14 +20,13 @@
     <!-- Custom CSS -->
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link href="{{ url_for('static', filename='css/custom.css') }}" rel="stylesheet">
-	
-	<script src="//use.edgefonts.net/bebas-neue.js"></script>
 
+	<script src="https://use.edgefonts.net/bebas-neue.js"></script>
     <!-- Custom Fonts & Icons -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/icomoon-social.css') }}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
-	src="{{ url_for('static', filename="css/bootstrap.css") }}"
+
 	<script src="{{ url_for('static', filename='js/modernizr-2.6.2-respond-1.1.0.min.js') }}"></script>
 	
 
@@ -36,7 +34,7 @@
 
 <body>
         <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> or <a href="https://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
         
 
@@ -53,12 +51,10 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="/About_Us">About Us</a></li>
+                    <li><a href="/Services">Services</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Dropdown Menu 1</a></li>
                             <li><a href="#">Dropdown Menu 2</a></li>
@@ -66,12 +62,9 @@
                             <li><a href="#">Dropdown Menu 4</a></li>
                             <li><a href="#">Dropdown Menu 5</a></li>
                             <li class="divider"></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Use</a></li>
                         </ul>
                     </li>
-                    <li><a href="blog.html">Blog</a></li> 
-                    <li><a href="contact-us.html">Contact</a></li>
+                    <li><a href="/Contact_Us">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -88,7 +81,8 @@
                 <li data-target="#main-slider" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="item active" style="background-image: url(img/slides/1.jpg)">
+
+                <div class="item active" style="background-image: 'static/img/blog/1.jpg')">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12">
@@ -100,7 +94,7 @@
                         </div>
                     </div>
                 </div><!--/.item-->
-                <div class="item" style="background-image: url(img/slides/2.jpg)">
+                <div class="item" style="background-image:url_for('static', filename='img/blog/1.jpg')">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12">
@@ -114,7 +108,7 @@
                         </div>
                     </div>
                 </div><!--/.item-->
-                <div class="item" style="background-image: url(img/slides/3.jpg)">
+                <div class="item" style="background-image:url_for('static', filename='img/slides/3.jpg')">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12">
@@ -204,7 +198,7 @@
 			<ul class="grid cs-style-3">
 	        	<div class="col-md-4 col-sm-6">
 					<figure>
-						<img src="img/portfolio/4.jpg" alt="img04">
+						<img src="{{ url_for('static', filename='img/portfolio/4.jpg') }}" alt="img04">
 						<figcaption>
 							<h3>Settings</h3>
 							<span>Jacob Cummings</span>
@@ -214,7 +208,7 @@
 	        	</div>	
 				<div class="col-md-4 col-sm-6">
 					<figure>
-						<img src="img/portfolio/1.jpg" alt="img01">
+						<img src="{{ url_for('static', filename='img/portfolio/1.jpg') }}" alt="img01">
 						<figcaption>
 							<h3>Camera</h3>
 							<span>Jacob Cummings</span>
@@ -224,7 +218,7 @@
 				</div>
 				<div class="col-md-4 col-sm-6">
 					<figure>
-						<img src="img/portfolio/2.jpg" alt="img02">
+						<img src="{{ url_for('static', filename='img/portfolio/2.jpg') }}" alt="img02">
 						<figcaption>
 							<h3>Music</h3>
 							<span>Jacob Cummings</span>
@@ -234,7 +228,8 @@
 				</div>
 				<div class="col-md-4 col-sm-6">
 					<figure>
-						<img src="img/portfolio/5.jpg" alt="img05">
+						<img src="{{ url_for('static', filename='img/portfolio/5.jpg') }}" alt="img05">
+						##########src="{{ url_for('static', filename='img/portfolio/3.jpg') }}"
 						<figcaption>
 							<h3>Safari</h3>
 							<span>Jacob Cummings</span>
@@ -244,7 +239,7 @@
 				</div>
 				<div class="col-md-4 col-sm-6">
 					<figure>
-						<img src="img/portfolio/3.jpg" alt="img03">
+						<img src="{{ url_for('static', filename='img/portfolio/3.jpg') }}" alt="img03">
 						<figcaption>
 							<h3>Phone</h3>
 							<span>Jacob Cummings</span>
@@ -254,7 +249,7 @@
 				</div>
 				<div class="col-md-4 col-sm-6">
 					<figure>
-						<img src="img/portfolio/6.jpg" alt="img06">
+						<img src="{{ url_for('static', filename='img/portfolio/6.jpg') }}" alt="img06">
 						<figcaption>
 							<h3>Game Center</h3>
 							<span>Jacob Cummings</span>
@@ -279,18 +274,18 @@
 				</div>
 
 				<div class="clients-logo-wrapper text-center row">
-					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="img/logos/logo-1.jpg" alt="Client Name"></a></div>
-					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="img/logos/logo-2.jpg" alt="Client Name"></a></div>
-					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="img/logos/logo-3.jpg" alt="Client Name"></a></div>
-					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="img/logos/logo-4.jpg" alt="Client Name"></a></div>
-					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="img/logos/logo-5.jpg" alt="Client Name"></a></div>
-					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="img/logos/logo-6.jpg" alt="Client Name"></a></div>
-					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="img/logos/logo-7.jpg" alt="Client Name"></a></div>
-					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="img/logos/logo-8.jpg" alt="Client Name"></a></div>
-					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="img/logos/logo-9.jpg" alt="Client Name"></a></div>
-					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="img/logos/logo-10.jpg" alt="Client Name"></a></div>
-					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="img/logos/logo-11.jpg" alt="Client Name"></a></div>
-					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="img/logos/logo-12.jpg" alt="Client Name"></a></div>
+					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="{{ url_for('static', filename='img/logos/logo-1.jpg') }}" alt="Client Name"></a></div>
+					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="{{ url_for('static', filename='img/logos/logo-2.jpg') }}" alt="Client Name"></a></div>
+					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="{{ url_for('static', filename='img/logos/logo-3.jpg') }}" alt="Client Name"></a></div>
+					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="{{ url_for('static', filename='img/logos/logo-4.jpg') }}" alt="Client Name"></a></div>
+					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="{{ url_for('static', filename='img/logos/logo-5.jpg') }}" alt="Client Name"></a></div>
+					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="{{ url_for('static', filename='img/logos/logo-6.jpg') }}" alt="Client Name"></a></div>
+					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="{{ url_for('static', filename='img/logos/logo-7.jpg') }}" alt="Client Name"></a></div>
+					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="{{ url_for('static', filename='img/logos/logo-8.jpg') }}" alt="Client Name"></a></div>
+					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="{{ url_for('static', filename='img/logos/logo-9.jpg') }}" alt="Client Name"></a></div>
+					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="{{ url_for('static', filename='img/logos/logo-10.jpg') }}" alt="Client Name"></a></div>
+					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="{{ url_for('static', filename='img/logos/logo-11.jpg') }}" alt="Client Name"></a></div>
+					<div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="{{ url_for('static', filename='img/logos/logo-12.jpg') }}" alt="Client Name"></a></div>
 				</div>
 			</div>
 	    </div>
@@ -315,10 +310,10 @@
 		    			<h3>Our Social Networks</h3>
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
 		    			<div>
-		    				<img src="img/icons/facebook.png" width="32" alt="Facebook">
-		    				<img src="img/icons/twitter.png" width="32" alt="Twitter">
-		    				<img src="img/icons/linkedin.png" width="32" alt="LinkedIn">
-							<img src="img/icons/rss.png" width="32" alt="RSS Feed">
+		    				<img src="{{ url_for('static', filename='img/icons/facebook.png') }}" width="32" alt="Facebook">
+		    				<img src="{{ url_for('static', filename='img/icons/twitter.png') }}"" width="32" alt="Twitter">
+		    				<img src="{{ url_for('static', filename='img/icons/linkedin.png') }}" width="32" alt="LinkedIn">
+							<img src="{{ url_for('static', filename='img/icons/rss.png') }}" width="32" alt="RSS Feed">
 						</div>
 		    		</div>
 		    		<div class="col-footer col-md-4 col-xs-6">
@@ -338,11 +333,11 @@
         <!-- Javascripts -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
-        <script src="js/bootstrap.min.js"></script>
-		
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
 		<!-- Scrolling Nav JavaScript -->
-		<script src="js/jquery.easing.min.js"></script>
-		<script src="js/scrolling-nav.js"></script>		
+		<script src="{{ url_for('static', filename='js/jquery.easing.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/scrolling-nav.js') }}"></script>
 
     </body>
 </html>

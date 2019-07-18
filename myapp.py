@@ -12,12 +12,12 @@ def index():
 
 
 @app.route('/About_Us')
-def whereami():
-    return 'Ghana!'
+def About_Us():
+    return render_template('about-us.html')
 
-@app.route('/Home')
-def Home():
-    return render_template('index.html')
+@app.route('/Services')
+def Services():
+    return render_template('services.html')
 
 @app.route('/contact')
 def contact():
